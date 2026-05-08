@@ -1,0 +1,50 @@
+tr{
+  display: inline-block;
+}
+tr[class="read"] {
+    
+    background-image: linear-gradient(green, lightgreen);
+    span[class="status"]{
+        border:darkgreen;
+        background-image: linear-gradient(white, green);
+    }
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(red, pink);
+    span[class="status"]{
+        border:darkred;
+        background-image: linear-gradient(white, red);
+    }
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(yellow, lightyellow);
+    span[class="status"]{
+        border:darkgoldenrod;
+        background-image: linear-gradient(white, goldenrod);
+    }
+}
+
+span{
+    display: inline-block;
+}
+span[class="status"]{
+    height:10px;
+    width:50px;
+    padding:5px;
+}
+
+span[class^="rate"]{
+    height:10px;
+    width:50px;
+    padding:5px;
+    span{
+        border:black;
+        border-radius:2px;
+        margin:2px;
+        height:8px;
+        width:40px;
+        background-color:gray;
+    }
+}
